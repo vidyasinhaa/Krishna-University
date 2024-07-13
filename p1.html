@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: aliceblue;
+        top: 0;
+        margin: 0;
+        }
+        header h1, h3{
+            font-size: 21px;
+            text-align: center;
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        header{
+            padding: 30px;
+            background-color: aqua;
+        }
+        .logo{
+            position: absolute;
+            top: 1;
+            left: 1;
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+        }
+        nav{
+            background-color: #333;
+            overflow-y: auto;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 20px;
+            text-align: center;
+            float: left;
+            color: white;
+            cursor: pointer;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+        .notice-board {
+      background-color:coral;
+      color: #fff;
+      padding: 2px;
+      overflow: hidden;
+    }
+
+    .marquee-container {
+      width: 100%;
+      height: 10%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .marquee-content {
+      display: inline-block;
+
+      animation: marquee-animation 20s linear infinite;
+    }
+
+    @keyframes marquee-animation {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+        
+    </style>
+</head>
+<body>
+   <header>
+    <img class="logo" src="logo.jpg">
+    <h1>KRISHNA KANHAIYA UNIVERSITY</h1>
+    <h3>Ranchi, Jharkhand | krishnakanhaiya@gmail.com</h3>
+   </header>
+  
+   <nav class="list">
+    <a href="home.html" target="f2">Home</a>
+    <a href="register.html" target="f2">Register</a>
+    <a href="login.html" target="f2">Login</a>
+    <a href="courses.html" target="f2">Courses</a>
+    <a href="placement.html" target="f2">Placements</a>
+    <a href="payfee.html" target="f2">Pay Fee</a>
+    <a href="p2.html" target="f2">Contact Us</a>
+    <a href="gallary.html" target="f2">Gallary</a>
+   <!-- <h3 class="hd">NOTICE : Site is over construction!!!</h3>-->
+    </nav>
+    <div class="notice-board">
+        <div class="marquee-container">
+          <div class="marquee-content">
+            <p>NOTICE: FILL UP FORM FOR ADMISSION IN UG|| PAY EXAMINATION FEE FOR SEMESTER 2|| FIRST PROVISIONAL LIST FOR BSC. (CA,IT,CS) HAS BEEN PUBLISHED</p>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
